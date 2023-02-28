@@ -19,8 +19,8 @@ nav{
     justify-content: space-between;
     position: relative;
     padding-top: 45px;
-    padding-left: 7%;
-    padding-right: 7%;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
 .logo { 
@@ -48,7 +48,6 @@ nav ul li a {
     padding: 6px 15px;
     border-radius: 25px;
     text-decoration: underline rgb(158, 153, 153) 2px;
-    box-shadow: 0 0 3px #000000;
 }
 
 nav ul li a:hover {
@@ -63,9 +62,11 @@ nav ul li a:hover {
 .content { 
     position: absolute;
     top: 50%;
-    left: 8%;
+    left: 20%;
+    right: 20%;
     transform: translateY(-50%);
 }
+
 
 h1{
     color: white;
@@ -82,4 +83,16 @@ h4 {
     color: rgb(158, 153, 153);
     font-size: 20px;
     letter-spacing: 2px; 
+}
+
+.frontimg {
+    position: absolute;
+    object-fit: cover;
+    width: 350px;
+    height: 500px;
+    border-radius: 10px ;
+    border: 1px solid white;
+    top: 50%;
+    left: 58%;
+    transform: translateY(-50%);
 }
