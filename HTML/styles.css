@@ -96,3 +96,179 @@ h4 {
     left: 58%;
     transform: translateY(-50%);
 }
+
+.about{
+    width: 100%;
+    padding: 5px 0px;
+    background-color: rgb(158, 153, 153);
+}
+
+.about img {
+    height: auto;
+    width: 430px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.about-text {
+    width: 550px;
+}
+
+.main {
+    background-image: url(../Images/dark\ black.jpg);
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h2 {
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.about-text p {
+    color: white;
+    letter-spacing: 1px;
+    line-height: 18px;
+    margin-bottom: 45px;
+}
+
+.contact {
+    background: url(../Images/dark\ black.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.title h2{
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+
+.card {
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: rgb(158, 153, 153);
+}
+
+h5 {
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.pra p{
+    color: rgb(158, 153, 153);
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.card .button {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 6px 15px;
+    border-radius: 25px;
+    text-decoration: underline rgb(158, 153, 153) 2px;
+    box-shadow: 0 3px 10px rgb(158, 153, 153); 
+    transition: .4s;
+
+}
+
+.card .button:hover {
+    background-color: rgb(158, 153, 153);
+}
+
+.fa-envelope:hover {
+    transform: scale(1.2);
+}
+
+.fa-instagram:hover {
+    transform: scale(1.2);
+}
+
+.fa-facebook-f:hover {
+    transform: scale(1.2);
+}
+
+.hire {
+    width: 100%;
+    height: 290px;
+    background: linear-gradient(rgb(33, 33, 33), black);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hire p {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.hire .button-two {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 6px 15px;
+    border-radius: 25px;
+    text-decoration: underline rgb(158, 153, 153) 2px;
+    box-shadow: 0 3px 10px rgb(158, 153, 153); 
+    transition: .4s;
+}
+
+.hire .button-two:hover {
+    background-color: rgb(158, 153, 153);
+}
+
+.end {
+    right: 5px;
+    position: fixed;
+    color: rgb(158, 153, 153);
+    bottom: 10px;
+    font-size: 12px;
+}
