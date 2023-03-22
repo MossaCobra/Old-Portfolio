@@ -2,8 +2,8 @@ html,body
 {
     width: 100%;
     height: 100%;
-    margin: 0px;
-    padding: 0px;
+    margin: 0%;
+    padding: 0%;
     overflow-x: hidden; 
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -22,8 +22,8 @@ nav{
     justify-content: space-between;
     position: relative;
     padding-top: 45px;
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 9%;
+    padding-right: 9%;
 }
 
 .logo { 
@@ -62,33 +62,40 @@ nav ul li a:hover {
     transform: scale(1.1);
 }
 
-.content {
-    height: 100vh;
+.grid {
+    top:25px;
+    height: 80vh;
     display: grid;
     grid-template-columns: 50% 50%;
     border-radius: 10px;
     position: relative;
-    justify-content: center;
 }
 
 .left-side { 
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 200px;
-    padding-bottom: 45%;
+    padding-left: 35%;
+    padding-bottom: 15%;
+
 }
 
 .right-side {
+    position: relative;
     display: flex;
     justify-content: center;
-    padding-right: 80px;
+    padding-right: 35%;
+    padding-top: 5%;
 }
 
 .frontimg {
-    height: 480px;
+    position: relative;
+    height: 50vh;
     object-fit: cover;
-    justify-content: absolute;
+    justify-content: relative;
+    border-radius: 25px;
+    box-shadow: 0 3px 10px rgb(158, 153, 153); 
 }
 
 h1{
@@ -128,6 +135,7 @@ h4 {
 
 .main {
     background-image: url(../Images/dark\ black.jpg);
+    background-size: cover;
     height: 100vh;
     margin: 0 auto;
     display: flex;
