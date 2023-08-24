@@ -64,7 +64,7 @@ nav ul li a:hover {
 
 .grid {
     top:25px;
-    height: 80vh;
+    height: auto;
     display: grid;
     grid-template-columns: 50% 50%;
     border-radius: 10px;
@@ -84,9 +84,11 @@ nav ul li a:hover {
 .right-side {
     position: relative;
     display: flex;
+    flex-direction: column; /* Change to column */
     justify-content: center;
-    padding-right: 35%;
-    padding-top: 5%;
+    align-items: center; /* Add this */
+    padding: 5% 10%; /* Adjust padding as needed */
+
 }
 
 .frontimg {
@@ -115,9 +117,9 @@ h4 {
     letter-spacing: 2px; 
 }
 
-.about{
+.about {
     width: 100%;
-    padding: 5px 0px;
+    padding: 10px 0; 
     background-color: rgb(158, 153, 153);
 }
 
@@ -264,6 +266,7 @@ h5 {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 25px;
+    justify-content: center;
 }
 
 .hire .button-two {
@@ -291,3 +294,105 @@ h5 {
     font-size: 12px;
 }
 
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 767px) {
+    
+    .grid {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        max-height: 70vh; 
+        overflow-y: auto;
+    }
+
+    .left-side {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .right-side {
+        padding: 10px;
+        text-align: center;
+    }
+
+
+    .nav-links {
+        display: flex;
+        flex-direction: column; 
+        gap: 10px; 
+        align-items: center; 
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center; 
+    }
+
+
+    .frontimg {
+        height: 40vh;
+        max-width: 100%; 
+    }
+
+    .image-container {
+        text-align: center;
+        margin-bottom: 20px; 
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center content horizontally */
+        padding: 20px; /* Add padding for spacing */
+    }
+
+    .main img {
+        margin-top: 20px; /* Add margin to create space between image and content */
+        max-width: 100%; /* Ensure the image doesn't exceed container width */
+        border: 1px solid white;
+        border-radius: 10px;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .about-text p {
+        font-size: 10px; /* Adjust font size for the paragraph */
+        white-space: normal; /* Allow word wrapping */
+        overflow-wrap: break-word; /* Ensure words are wrapped if they don't fit */
+        max-width: 100%; /* Limit width to prevent overflow */
+    }
+    
+    .about {
+        width: 100%;
+        padding: 15px 0; 
+        background-color: rgb(158, 153, 153);
+    }
+
+    .box {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .contact .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact .card {
+        width: 80%; 
+        margin: 10px 0;
+    }
+
+    .hire-text {
+        text-align: center;
+    }
+
+}
